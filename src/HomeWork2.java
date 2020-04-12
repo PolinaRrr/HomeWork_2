@@ -24,7 +24,7 @@ public class HomeWork2 {
 
         //Д.З. п.3
         int[] newArr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
-        HomeWork2.reduceElementOfArray(newArr);
+        HomeWork2.increaseElementOfArray(newArr);
         System.out.println(Arrays.toString(newArr));
 
         //Д.З. п.4
@@ -50,7 +50,6 @@ public class HomeWork2 {
 
     }
 
-
     /**
      * метод проходится по массиву и заменяет 1 на 0, а 0 на 1
      * @param arr
@@ -64,7 +63,6 @@ public class HomeWork2 {
             }
         }
     }
-
 
     /**
      * метод заполняет массив елементами, где кажный последующий элемент больше на 3 чем предыдущий
@@ -81,7 +79,7 @@ public class HomeWork2 {
      * метод перебирает массив и елементы со значением меньше 6 умножает на 2
      * @param newArr
      */
-    private static void reduceElementOfArray(int[] newArr) {
+    private static void increaseElementOfArray(int[] newArr) {
         for (int i = 0; i < newArr.length; i++) {
             if (newArr[i] < 6) {
                 newArr[i] = newArr[i] * 2;
@@ -103,7 +101,6 @@ public class HomeWork2 {
         }
     }
 
-
     /**
      * метод находит и возвращает минимальный и максимальный елементы массива
      * @param nextArr
@@ -122,7 +119,6 @@ public class HomeWork2 {
         }
         return new int[] {elementMax, elementMin};
     }
-
 
     /**
      * метод возвращает true, если в массиве есть место, в котором сумма левой и правой части массива равны
@@ -146,7 +142,6 @@ public class HomeWork2 {
             }
             return false;
     }
-
 
     /**
      * метод сдвигает елементы массива на n позиций
